@@ -2,26 +2,47 @@
 body, html {
     height: 100%;
 }
+/*
+Color pallette;
+bright orange: #F8A51B
+bright green: #64C195
+bright blue: #56C4C5
+bright red: #ED403C
+bright purple: #592F93
+*/
 
-.navbar {
-    overflow: hidden;
+/* Add a black background color to the top navigation */
+.topnav {
     background-color: #333;
- /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    overflow: hidden;
     padding-left: 15%;
 }
 
-/* Links inside the navbar */
-.navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
+
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 24px 26px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 
 }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
 /* Style the links inside the sidenav */
 #mySidenav a {
     position: fixed; /* Position them relative to the browser window */
