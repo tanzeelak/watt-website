@@ -2,9 +2,10 @@
   "name": "Indus-Web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,8 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-publish": "^0.1.5",
     "metalsmith-word-count": "0.0.4"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.10"
   }
 }
