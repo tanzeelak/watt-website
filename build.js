@@ -25,6 +25,7 @@ metalsmith = require('metalsmith'),
 markdown   = require('metalsmith-markdown'),
 layouts = require('metalsmith-layouts'),
 handlebars = require('handlebars'),
+collections = require('metalsmith-collections'),
 
 ms = metalsmith(__dirname) // the working directory
 .metadata({
@@ -43,6 +44,13 @@ ms = metalsmith(__dirname) // the working directory
     directory: './layouts',
     default: 'article.html',
     pattern: ["*/*/*html","*/*html","*html"]
+}))
+.use(collections({
+    articles: {
+        pattern:'articles/**/*.md',
+        sortBy: 'date',
+        reverse: true
+    },
 }))
 .build(function(err) {  // build the site
     if (err) console.log(err);   // and throw errors

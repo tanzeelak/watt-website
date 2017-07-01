@@ -35,6 +35,7 @@
     "metalsmith-word-count": "0.0.4"
   },
   "dependencies": {
-    "handlebars": "^4.0.10"
+    "handlebars": "^4.0.10",
+    "metalsmith-collections": "^0.9.0"
   }
 }
