@@ -1,20 +1,39 @@
-var express = require('express')
-  , logger = require('morgan')
-  , app = express()
-  , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
+var express = require("express");
+var app = express();
+var router = express.Router();
+var path = __dirname + '/views/';
+var hbs = require('hbs');
 
-app.use(logger('dev'))
-app.use(express.static(__dirname + '/static'))
+app.set('view engine', 'hbs');
 
-app.get('/', function (req, res, next) {
-  try {
-    var html = template({ title: 'Home' })
-    res.send(html)
-  } catch (e) {
-    next(e)
-  }
-})
+hbs.registerPartials(__dirname + '/views/partials');
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
-})
+router.use(function (req,res,next) {
+  console.log("/" + req.method);
+  next();
+});
+
+router.get("/",function(req,res){
+    res.render('index');
+});
+
+router.get("/about",function(req,res){
+    res.render('about');
+});
+
+router.get("/contact",function(req,res){
+  res.render('contact');
+});
+
+app.use("/",router);
+
+app.use(express.static("public"));
+// app.use(express.static(__dirname + '/public'));
+
+app.use("*",function(req,res){
+    res.render('404');
+});
+
+app.listen(3000,function(){
+  console.log("Live at Port 3000");
+});
