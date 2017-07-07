@@ -22,6 +22,9 @@ metalsmith(__dirname)
           sortBy: 'date',
           reverse: true
       },
+      boardMembers: {
+          pattern: 'img/board/**/*.png'
+      }
   }))
   .use(markdown())
   .use(permalinks({

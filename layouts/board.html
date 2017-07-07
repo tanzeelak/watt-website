@@ -1,0 +1,12 @@
+{{> header }}
+    <h1>{{ site.name }}</h1>
+
+    <ul class="recent">
+    {{#each boardMembers }}
+      <li>
+        <img src="{{ path }}">
+      </li>
+    {{/each}}
+    </ul>
+
+{{> footer}}
