@@ -2,4 +2,4 @@ Install node modules:
 npm install
 
 Run server at localhost:3000:
-npm start
+nodemon

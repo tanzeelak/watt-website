@@ -21,8 +21,28 @@ router.get("/about",function(req,res){
     res.render('about');
 });
 
+router.get("/board",function(req,res){
+  res.render('board');
+});
+
+router.get("/calendar",function(req,res){
+  res.render('calendar');
+});
+
 router.get("/contact",function(req,res){
   res.render('contact');
+});
+
+router.get("/gallery",function(req,res){
+  res.render('gallery');
+});
+
+router.get("/sponsors",function(req,res){
+  res.render('sponsors');
+});
+
+router.get("/upcomingevents",function(req,res){
+  res.render('upcomingevents');
 });
 
 app.use("/",router);

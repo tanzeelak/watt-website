@@ -1,3 +1,28 @@
 body{
     /*background-color: red;*/
 }
+
+
+.waves-full-background
+{
+	background-color: rgba(89, 154, 242, 1);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+.site-wrapper
+{
+	max-width: 90%;
+	margin: auto;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+
+.navbar.transparent.navbar-inverse {
+   background: rgba(0,0,0,0.4);
+}
