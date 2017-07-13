@@ -1,5 +1,6 @@
 body{
     /*background-color: red;*/
+    line-height: 1.428571;
 }
 
 
@@ -28,11 +29,8 @@ body{
 
 .navbar {
     margin-bottom: 0px;
+    color: rgb(68, 43, 85);
     font-family: 'Raleway', sans-serif;
-}
-
-.navbar-inverse .navbar-brand {
-    color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -49,11 +47,15 @@ body{
  }
 
  .navbar-default .navbar-nav>li>a {
-    color: black;
+     color: rgb(166, 152, 171);
+ }
+
+ .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: rgb(68, 43, 85);
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-   /*color: rgb(68, 43, 85);*/
+#navbar-brand {
+    color: rgb(79,192,170);
 }
 
 .about-cover-heading{
@@ -66,4 +68,8 @@ body{
     border-style: solid;
     border-color: yellow;
     width: 26%;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
 }
