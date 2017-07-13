@@ -1,15 +1,22 @@
 body{
     /*background-color: red;*/
+    line-height: 1.428571;
 }
 
 
 .waves-full-background
 {
-	background-color: rgba(89, 154, 242, 1);
+	/*background-color: rgba(89, 154, 242, 1);*/
+    background-color: rgb(79,192,170);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100vh;
+    /*CENTER DIV!!*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .site-wrapper
@@ -20,9 +27,48 @@ body{
 
 .navbar {
     margin-bottom: 0px;
+    color: rgb(68, 43, 85);
+    font-family: 'Raleway', sans-serif;
 }
 
 
 .navbar.transparent.navbar-inverse {
    background: rgba(0,0,0,0.4);
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .navbar-default .navbar-nav>li>a {
+     color: rgb(166, 152, 171);
+ }
+
+ .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: rgb(68, 43, 85);
+}
+
+#navbar-brand {
+    color: rgb(79,192,170);
+}
+
+.about-cover-heading{
+    color: white;
+    font-size: 50px;
+}
+
+.about-cover-sub {
+    color: yellow;
+    border-style: solid;
+    border-color: yellow;
+    width: 26%;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
 }
