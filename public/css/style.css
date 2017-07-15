@@ -17,6 +17,15 @@ body{
     justify-content: center;
     align-items: center;
 
+    background:
+        /* top, transparent red, faked with gradient */
+        linear-gradient(
+          rgba(79,192,170, 0.45),
+          rgba(79,192,170, 0.45)
+        ),
+        /* bottom, image */
+        url(../img/tanzeela.jpg);
+
 }
 
 .site-wrapper
@@ -57,9 +66,15 @@ body{
     color: rgb(79,192,170);
 }
 
+#nav-logo{
+    display: inline-block;
+    width: 33px;
+}
+
 .about-cover-heading{
     color: white;
     font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about-cover-sub {
@@ -71,4 +86,9 @@ body{
 
 .jumbotron {
     margin-bottom: 0px;
+}
+
+.home-text {
+    padding-left: 15px;
+    padding-right: 15px;
 }
