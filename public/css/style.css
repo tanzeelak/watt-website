@@ -6,12 +6,13 @@ body{
 
 .waves-full-background
 {
-	/*background-color: rgba(89, 154, 242, 1);*/
-    background-color: rgb(79,192,170);
+	background-color: rgba(89, 154, 242, 1);
+    background-image: url(../img/rangoli.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100vh;
+
     /*CENTER DIV!!*/
     display: flex;
     justify-content: center;
@@ -32,6 +33,7 @@ body{
 {
 	max-width: 90%;
 	margin: auto;
+    /*opacity: 1;*/
 }
 
 .navbar {
@@ -40,13 +42,12 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
 
 .navbar.transparent.navbar-inverse {
    background: rgba(0,0,0,0.4);
-}
-
-.navbar-default {
-    background-color: white;
 }
 
 .dropdown:hover .dropdown-menu {
