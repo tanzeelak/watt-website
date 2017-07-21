@@ -7,7 +7,7 @@ body{
 .waves-full-background
 {
 	background-color: rgba(89, 154, 242, 1);
-    background-image: url(../img/rangoli.jpg);
+    background-image: url(../img/main-image-green.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -18,14 +18,12 @@ body{
     justify-content: center;
     align-items: center;
 
-    background:
-        /* top, transparent red, faked with gradient */
+    /*background:
         linear-gradient(
           rgba(79,192,170, 0.45),
           rgba(79,192,170, 0.45)
         ),
-        /* bottom, image */
-        url(../img/tanzeela.jpg);
+        url(../img/tanzeela.jpg);*/
 
 }
 
